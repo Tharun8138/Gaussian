@@ -8,7 +8,17 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Gaussian elimination without partial pivoting to solve a matrix. 
+### Step 1: Form the Augmented Matrix
+Combine the coefficient matrix and the constant vector into one augmented matrix.
+
+### Step 2: Forward Elimination
+Start with the first row as the pivot row.
+Eliminate the entries below the pivot (make them ( 0 )) by subtracting suitable multiples of the pivot row from the rows below.
+Move to the next row and repeat the process until the matrix is in row echelon form.
+
+### Step 3: Back Substitution
+Starting from the last row, use the pivot positions to solve for one variable at a time.
+Substitute the solved values into previous rows to find the remaining variables.
 
 ## Program:
 ```
